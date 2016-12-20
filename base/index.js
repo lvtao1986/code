@@ -1,3 +1,3 @@
 sendHttp('index.jade', function(str, res){
-    _RESULT = jade.render(str);
-},  res);
+    sendstr(jade.render(str),res);
+}, res);
