@@ -2,8 +2,8 @@ html
   body
     script(src="https://cdn.socket.io/socket.io-1.4.5.js")
     script.
-      var socket = io.connect('http://localhost');
+      var socket = io();
       socket.on('display', function(data){
         eval(data);
       });
-      socket.emit("ask");
+      socket.emit("ask","");
