@@ -1,4 +1,3 @@
-var n = Math.random();
-if(true){
-    _RESULT = jade.render("h Hello \nscript !{script}", { script: 'alert(' + n + ')'});
-}
+sendHttp('index.jade', function(str, res){
+    _RESULT = jade.render(str);
+},  res);
