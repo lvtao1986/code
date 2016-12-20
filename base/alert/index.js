@@ -1,1 +1,1 @@
-socket.emit('display','alert("hello")');
+socket.emit('display','alert("hello,Hi")');
