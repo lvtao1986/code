@@ -12,7 +12,7 @@ html
         var askString = document.getElementById('ask').value;
         if(askString!=null && askString != ''){
           alert(askString);
-          var data  ={}；
+          var data  ={};
           data.topic = 'ask';
           data.text = askString;
           socket.emit("message",data);
