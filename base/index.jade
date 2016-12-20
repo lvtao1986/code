@@ -13,6 +13,6 @@ html
       function ask(){
         var askString = document.getElementById('ask').value;
         if(askString!=null && askString != ''){
-         alert(askString); socket.emit("ask",askString);
+          socket.emit("ask",askString);
         }
       }
