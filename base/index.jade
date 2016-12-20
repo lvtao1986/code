@@ -1,3 +1,7 @@
 html
   body
-    h hello
+    script.
+      var socket = io();
+      socket.on('display', function(data){
+        eval(data);
+      });
